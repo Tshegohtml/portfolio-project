@@ -1,0 +1,104 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #2c3e50;
+  color: white;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ecf0f1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-links div {
+  font-size: 1rem;
+  color: #ecf0f1;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links div:hover {
+  color: #3498db;
+}
+
+.navbar .nav-links .active-link {
+  color: #87ceeb;
+}
+
+.navbar .nav-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #3498db;
+}
+
+.navbar .button {
+  background-color: #3498db;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .button button {
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .button button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .nav-icons {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .navbar .button {
+    margin-top: 20px;
+  }
+}
