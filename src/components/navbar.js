@@ -21,11 +21,23 @@ function Navbar() {
           <button>Download CV</button>
         </a>
       </div>
-
       <div className="nav-icons">
-        <FaGithub />
-        <FaLinkedin />
-      </div>
+      <button
+        onClick={() => window.open("https://github.com/Tshegohtml", "_blank")}
+        className="social-btn"
+      >
+        <FaGithub size={30} />
+      </button>
+
+      <button
+        onClick={() =>
+          window.open("https://www.linkedin.com/in/your-username", "_blank")
+        }
+        className="social-btn"
+      >
+        <FaLinkedin size={30} />
+      </button>
+    </div>
     </div>
   );
 }

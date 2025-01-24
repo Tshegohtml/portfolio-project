@@ -1,9 +1,17 @@
 import React from "react";
-import  Image from "./IMG_5721.JPG";
+import  Image from "./IMG_20240408_084521.jpg";
+import { useNavigate } from 'react-router-dom';
 import "./homepage.css"
 
 function Homepage() {
+  const navigate = useNavigate(); 
+
+  const handleClick = () => {
+    navigate('/letschat'); 
+};
   return (
+
+    
     <div className="container">
       <div className="heading">
         <h1>HI, I'M YVETTE TSHEGOFATSO MOTLHALANE</h1>
@@ -30,7 +38,13 @@ function Homepage() {
             </div>
         </div>
         <div className="lets-chat-btn">
-        <button>Lets chat!</button>
+        <button 
+            onClick={handleClick} 
+            style={styles.button} 
+            type="button"
+        >
+            Let's Chat
+        </button>
         </div>
         
       </div>
@@ -38,5 +52,17 @@ function Homepage() {
     </div>
   );
 }
+
+const styles = {
+  button: {
+      padding: '10px 20px',
+      backgroundColor: '#007bff',
+      color: '#fff',
+      border: 'none',
+      borderRadius: '5px',
+      cursor: 'pointer',
+      fontSize: '16px',
+  },
+};
 
 export default Homepage;

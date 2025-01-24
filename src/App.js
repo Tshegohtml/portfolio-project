@@ -7,6 +7,8 @@ import About from './components/about';
 import Skills from "./components/skills";
 import Projects from "./components/projects";
 import Feedback from './components/feedback';
+import Letschat from "./components/letschat";
+import Chatpage from "./components/chatpage";
 
 
 
@@ -21,6 +23,8 @@ function App() {
       <Route path="/skills" element={<Skills/>}/>
       <Route path="/projects" element={<Projects/>}/>
       <Route path="/feedback" element={<Feedback/>}/>
+      <Route path="/letschat" element={<Letschat/>}/>
+      <Route path="/chatpage" element={<Chatpage/>}/>
       
     </Routes>
   </Router>

@@ -1,4 +1,4 @@
-/* Base Styling */
+
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to bottom, #e8f0ff, #d0e0f8);
@@ -8,14 +8,14 @@ body {
   line-height: 1.6;
 }
 
-/* Container Styling */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Heading Styling */
+
 .heading h1 {
   font-size: 48px;
   font-weight: 700;
@@ -27,7 +27,7 @@ body {
   animation: fadeInDown 1s ease-in-out;
 }
 
-/* Paragraph Styling */
+
 .home-para p {
   font-size: 18px;
   line-height: 1.8;
@@ -42,7 +42,7 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-/* Image Styling */
+
 .image img {
   width: 350px;
   height: 450px;
@@ -54,7 +54,7 @@ body {
   animation: fadeIn 2s ease-in-out;
 }
 
-/* Button Styling */
+
 .lets-chat-btn {
   margin-top: 20px;
   display: flex;
@@ -80,7 +80,7 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Columns Styling */
+
 .columns {
   display: flex;
   flex-direction: row;
@@ -90,7 +90,7 @@ body {
   animation: fadeInUp 1.5s ease-in-out;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   from {
       opacity: 0;
